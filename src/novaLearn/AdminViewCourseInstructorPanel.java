@@ -67,13 +67,13 @@ public class AdminViewCourseInstructorPanel extends JPanel {
         add(tablePanel);
 
         //Table title columns and row data
-        String[] columns = {"Student ID", "Student Name", "Action"};
+        String[] columns = {"Student Name", "Student ID", "Section", "Action"};
         Object[][] data = {
-            {"20231234", "Balinado, Christian", ""},
-            {"24895678", "Carreon, Charles", ""},
-            {"2085476", "Cayaga, Kurt Joshua", ""},
-            {"20212355", "Oquindo, Kaye Ann Joy", ""},
-            {"29873455", "Sy, Christian Raphael", ""}
+            {"Balinado, Christian", "20231234", "2CS-A",""},
+            {"Carreon, Charles", "24895678", "2CS-A", ""},
+            {"Cayaga, Kurt Joshua", "2085476", "2CS-B", ""},
+            {"Oquindo, Kaye Ann Joy", "20212355", "2CS-A", ""},
+            {"Sy, Christian Raphael", "29873455", "2CS-B", ""}
 
         };
         DefaultTableModel model = new DefaultTableModel(data, columns) {
